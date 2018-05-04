@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Utilink</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <% if params["controller"] == "devise/sessions" %>
+  	<body class="login-page">
+  <% else %>
+  	<body class="dashboard-page">
+  <% end %>
+
+    <%= yield %>
+  </body>
+</html>

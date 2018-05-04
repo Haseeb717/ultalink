@@ -1,0 +1,16 @@
+<div class="container">
+	<% if user_signed_in? %>
+	    <%= link_to('Logout', destroy_user_session_path, method: :delete,:class=>
+	    "login") %>
+	  <% else %>
+	    <%= link_to "Log in", new_user_session_path,:class=>"login" %>
+	  <% end %> 
+  <div class="row vertical-offset-200">
+  	<div class="col-md-6 col-md-offset-4">
+			<h1 class="text-center white">
+				<a href=""><%= image_tag "logo-white.png" %><br/>
+				YOUR LINK TO WHAT'S BEYOND</a>
+			</h1>
+		</div>
+	</div>
+</div>
