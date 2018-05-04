@@ -28,7 +28,7 @@ body {
   background-image: url('002.jpg');
   background-color: #444;   
 }
-.login{color: white;font-size: 25px;}
+.login{font-size: 25px;}
 .vertical-offset-100{
     padding-top:100px;
 }
